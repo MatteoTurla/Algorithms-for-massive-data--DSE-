@@ -36,5 +36,5 @@ def test_loop(dataloader, model, loss_fn, device):
 
     test_loss /= num_batches
     correct /= size
-    print(f"Test Error: \n Accuracy: {(100*correct):>0.1f}%, Avg loss: {test_loss:>8f} \n")
+    print(f"Test statistics: \n Accuracy: {(100*correct):>0.4f}%, Avg loss: {test_loss:>4f} \n")
     return test_loss, correct
